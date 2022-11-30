@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="order">
+        <div class="order__desc desc-order">
+          <p class="desc-order__price desc-order__price--old">
+            Обычная цена: 1449 р.
+          </p>
+          <p class="desc-order__price desc-order__price--new">
+            Цена по акции:<br />149 р.
+          </p>
+          <p class="desc-order__amount">
+            Остаток товара на 11.11.2050:
+            <span class="desc-order__numb">58</span>
+          </p>
+        </div>
+        <div class="order__img-wrap">
+          <img src="./assets/img/raccoon.png" alt="purchase" />
+        </div>
+        <form id="form" class="order__form form">
+          <div class="form__title">Введите ваши данные в форму ниже:</div>
+          <div class="form__wrap">
+            <input
+              class="form__field"
+              type="text"
+              name="name"
+              placeholder="Ваше имя"
+            />
+            <input
+              class="form__field"
+              type="tel"
+              name="phone"
+              placeholder="Ваш телефон"
+            />
+            <input type="hidden" name="sub1" value="123" />
+            <input type="hidden" name="utm_source" value="321" />
+            <input type="hidden" name="ip" value="192.168.1.1 " />
+            <button class="form__btn" type="submit">
+              Получить за 149 руб.
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
